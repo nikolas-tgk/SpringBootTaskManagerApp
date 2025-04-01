@@ -5,7 +5,6 @@ import lombok.Data;
 
 @Entity
 @Data
-@Table
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO) // auto-generated id field

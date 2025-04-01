@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Task-Manager</title>
+</head>
+<body>
+    <h1>Task Manager</h1>
+<div> <th:block th:each="task : ${tasks}">
+        <div><span th:text="${task.title}">Task Title</span>
+        </div>
+</th:block>
+</div>
+</body>
+</html>
